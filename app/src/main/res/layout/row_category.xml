@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:contentPadding="10dp"
+    app:cardUseCompatPadding="true"
+    app:cardBackgroundColor="#ccc"
+    app:cardCornerRadius="5dp">
+
+    <LinearLayout
+        android:id="@+id/layout_item_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_category_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Category Title"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:textColor="@color/teal_700"/>
+        <ImageButton
+            android:id="@+id/btn_delete_category"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_baseline_delete"
+            android:background="@drawable/shape_button03"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
